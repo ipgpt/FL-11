@@ -167,7 +167,8 @@
     .text::after {
         position: absolute;
         content: 'New';
-        font-size: 60%;
+        font-size: 10px;
+        font-variant: small-caps;
         font-weight: bold;
         color: #FF0000; 
     }
@@ -261,7 +262,7 @@
         flex-direction: row;
     }
 
-    .tm-content-box .tm-team-description-container:nth-child(1) {
+    .flex-2-col .padding-medium {
         margin: auto;
     }
 
