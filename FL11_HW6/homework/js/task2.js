@@ -1,6 +1,6 @@
-let a = Number(prompt('Write the value of a', 0)),
-    b = Number(prompt('Write the value of b', 0)),
-    c = Number(prompt('Write the value of c', 0));
+let a = Number(prompt('Write the value of a')),
+    b = Number(prompt('Write the value of b')),
+    c = Number(prompt('Write the value of c'));
 
 if (a + b < c || a + c < b || b + c < a) {
     console.log('Triangle doesn’t exist');
