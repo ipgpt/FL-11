@@ -1,18 +1,14 @@
 function reverseNumber(num) {
-    let numberString = num.toString(),
-      numberArray = numberString.split(''),
-      result = [];
-    console.log(numberArray);
-    if ((numberArray.indexOf('-')) === 0) {
-      numberArray = numberArray.slice(1);
-    } else {
-      numberArray = numberArray.slice();
-    }
-    for (let i = numberArray.length - 1; i >= 0; i--) {
-      result.push(numberArray[i]);
-    }
-    return Number(result.join('')) * Math.sign(num);
-  }
+  const TEN = 10;
+  let usingNum = Math.abs(num),
+      result = '';
+  do {
+    result += usingNum % TEN;
+    usingNum /= TEN;
+    usingNum = Math.trunc(usingNum);
+  } while (usingNum > 0);
+  return Number(result) * Math.sign(num);
+}
   
 reverseNumber(123);
 reverseNumber(-456);
