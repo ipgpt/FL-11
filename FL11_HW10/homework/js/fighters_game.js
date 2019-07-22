@@ -30,8 +30,8 @@ class Fighter {
         privateData.get(this).loss += 1;
     }
     logCombatHistory() {
-        console.log(`Name: ${this.getName()}` +
-            ` Wins: ${privateData.get(this).wins}, Losses: ${privateData.get(this).loss}`);
+        console.log(`Name: ${this.getName()}, ` +
+            `Wins: ${privateData.get(this).wins}, Losses: ${privateData.get(this).loss}`);
     }
     heal(num) {
         privateData.get(this).hp += num;
