@@ -1,4 +1,5 @@
 const privateData = new WeakMap();
+
 class Fighter {
     constructor(inputObject) {
         privateData.set(this, {
@@ -30,7 +31,7 @@ class Fighter {
     }
     logCombatHistory() {
         console.log(`Name: ${this.getName()}` +
-            `Wins: ${privateData.get(this).wins}, Losses: ${privateData.get(this).loss}`);
+            ` Wins: ${privateData.get(this).wins}, Losses: ${privateData.get(this).loss}`);
     }
     heal(num) {
         privateData.get(this).hp += num;
