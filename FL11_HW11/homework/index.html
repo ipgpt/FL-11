@@ -14,31 +14,7 @@
     <input class="list-add-input" type="text" placeholder="Add new action">
     <i class="material-icons add">add_box</i>
     <hr>
-    <div class="list-area">
-      <div class="list-area-item">
-        <label class="list-area-item-label">
-          <input class="list-mark" type="checkbox">
-          <i class="material-icons not-marked">check_box_outline_blank</i>
-          <i class="material-icons marked">check_box</i>
-          <span class="list-area-item-label-text">Find the cat</span>
-        </label>
-        <i class="material-icons edit">edit</i>
-        <i class="material-icons delete">delete</i>
-      </div>
-      <div class="list-area-item">
-        <input class="list-edit" type="text">
-        <i class="material-icons save">save</i>
-      </div>
-      <div class="list-area-item">
-        <label class="list-area-item-label">
-          <input class="list-mark" type="checkbox">
-          <i class="material-icons not-marked">check_box_outline_blank</i>
-          <i class="material-icons marked">check_box</i>
-          <span class="list-area-item-label-text">Find the dog</span>
-        </label>
-        <i class="material-icons edit">edit</i>
-        <i class="material-icons delete">delete</i>
-      </div>
+    <div class="list-area" ondrop="drop(event)" ondragover="allowDrop(event)">
     </div>
   </div>
 
