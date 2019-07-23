@@ -19,6 +19,7 @@ function addTask() {
     if (allListItems.length >= maxTaskNumber) {
         addTaskField.setAttribute('disabled', '');
         addButton.removeEventListener('click', addTask);
+        addButton.style.color = '#c8d0d8';
         return alert('Maximum item per list are created');
     }
     if (addTaskField.value) {
@@ -80,6 +81,7 @@ function deleteTask(input) {
     if (allListItems.length < maxTaskNumber) {
         addTaskField.removeAttribute('disabled', '');
         addButton.addEventListener('click', addTask);
+        changeAddButtonColor();
     }
 }
 
