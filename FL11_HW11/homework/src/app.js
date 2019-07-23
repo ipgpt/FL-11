@@ -16,15 +16,16 @@ function changeAddButtonColor() {
 
 function addTask() {
     allListItems = document.querySelectorAll('.list-area-item');
-    if (allListItems.length >= maxTaskNumber) {
+    if (!addTaskField.value) {
+        alert('Task is empty. ' +
+            'Write a task before adding it.');
+    } else if (allListItems.length >= maxTaskNumber) {
         addTaskField.setAttribute('disabled', '');
         addButton.removeEventListener('click', addTask);
         addButton.style.color = '#c8d0d8';
         return alert('Maximum item per list are created');
-    }
-    if (addTaskField.value) {
+    } else {
         let div = document.createElement('div');
-
         div.classList.add('list-area-item');
         div.setAttribute('draggable', 'true');
         div.setAttribute('ondragstart', 'drag(event)');
@@ -38,9 +39,6 @@ function addTask() {
 <i class="material-icons edit" onclick="editTask(this)">edit</i>
 <i class="material-icons delete" onclick="deleteTask(this)">delete</i>`
         listArea.appendChild(div);
-    } else {
-        alert('Task is empty. ' +
-            'Write a task before adding it.');
     }
 }
 
@@ -53,7 +51,6 @@ function checkDoneTask(input) {
 function editTask(input) {
     let div = input.parentElement,
         text = div.querySelector('.list-area-item-label-text').textContent;
-
     div.innerHTML =
         `<input class="list-edit" type="text" value="${text}">
     <i class="material-icons save" onclick="saveTask(this)">save</i>`;
@@ -62,7 +59,6 @@ function editTask(input) {
 function saveTask(input) {
     let div = input.parentElement,
         text = div.querySelector('.list-edit').value;
-
     div.innerHTML =
         `<label class="list-area-item-label">
   <input class="list-mark" type="checkbox" onclick="checkDoneTask(this)">
