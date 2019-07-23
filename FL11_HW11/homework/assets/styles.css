@@ -1,2 +1,84 @@
-/* Your styles goes here */
+#root {
+    width: 50%;
+    margin: 0 auto;
+    /*text-align: center;*/
+    color: #41b5fe;
+}
 
+.list-headline {
+    text-align: center;
+    margin-bottom: 0;
+    cursor: default;
+}
+
+.list-add-input {
+    width: 85%;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+}
+
+.list-add-input,
+.list-edit {
+    font-size: 11px;
+    border: 1px solid #c8d0d8;
+    border-radius: 3px;
+}
+
+.material-icons {
+    color: #89c4f4;
+}
+
+.add {
+    position: relative;
+    top: 16px;
+    left: 10px;
+    width: 5%;
+    font-size: 42px;
+    color: #c8d0d8;
+}
+
+hr {
+    height: 5px;
+    background-color: #41b5fe;
+    opacity: 0.2;
+}
+
+.list-area {
+    margin-top: 15px;
+}
+
+.list-area-item {
+    display: flex;
+    width: 100%;
+}
+
+.delete {
+    margin-left: auto;
+    padding-right: 10px;
+}
+
+.list-mark,
+.list-mark:not(:checked)~.marked,
+.list-mark:checked~.not-marked {
+    display: none;
+}
+
+.list-area-item-label,
+.delete,
+.edit,
+.save,
+.add {
+    cursor: pointer;
+}
+
+.list-area-item-label-text {
+    padding-right: 10px;
+    vertical-align: super;
+}
+
+.list-edit {
+    width: 220px;
+    padding: 6px 10px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}

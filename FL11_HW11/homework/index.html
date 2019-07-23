@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Homework 11 - TODO Cat List</title>
   <link rel="stylesheet" href="./assets/material-icons/material-icons.css">
   <link rel="stylesheet" href="./assets/styles.css">
 </head>
+
 <body>
-  <div id="root"></div>
+  <div id="root">
+    <h2 class="list-headline">TODO Cat List</h2>
+    <input class="list-add-input" type="text" placeholder="Add new action">
+    <i class="material-icons add">add_box</i>
+    <hr>
+    <div class="list-area">
+      <div class="list-area-item">
+        <label class="list-area-item-label">
+          <input class="list-mark" type="checkbox">
+          <i class="material-icons not-marked">check_box_outline_blank</i>
+          <i class="material-icons marked">check_box</i>
+          <span class="list-area-item-label-text">Find the cat</span>
+        </label>
+        <i class="material-icons edit">edit</i>
+        <i class="material-icons delete">delete</i>
+      </div>
+      <div class="list-area-item">
+        <input class="list-edit" type="text">
+        <i class="material-icons save">save</i>
+      </div>
+      <div class="list-area-item">
+        <label class="list-area-item-label">
+          <input class="list-mark" type="checkbox">
+          <i class="material-icons not-marked">check_box_outline_blank</i>
+          <i class="material-icons marked">check_box</i>
+          <span class="list-area-item-label-text">Find the dog</span>
+        </label>
+        <i class="material-icons edit">edit</i>
+        <i class="material-icons delete">delete</i>
+      </div>
+    </div>
+  </div>
 
   <script src="./src/app.js"></script>
 </body>
+
 </html>
