@@ -45,6 +45,7 @@ function addTask() {
 function checkDoneTask(input) {
     if (input.checked) {
         input.setAttribute('disabled', '');
+        input.setAttribute('checked', '');
     }
 }
 
