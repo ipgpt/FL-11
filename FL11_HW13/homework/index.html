@@ -1,17 +1,119 @@
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS Frameworks</title>
-    <link rel="stylesheet/less" type="text/css" href="styles/styles.less">
-    <link rel="stylesheet/less" type="text/css" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet/less" href="styles/styles.less">
     <script src="js/less.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header-nav nav container">
+            <a href="#" class="header-nav__item nav-link">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <a href="#" class="header-nav__item header-nav__item--hide nav-link">
+                Classes
+            </a>
+            <a href="#" class="header-nav__item header-nav__item--hide nav-link">
+                About us
+            </a>
+            <a href="#" class="header-nav__item header-nav__item--hide nav-link">
+                Contacts
+            </a>
+            <a href="#" class="header-nav__item nav-item nav-link" data-toggle="dropdown">
+                &#9776;
+            </a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Classes</a>
+                <a class="dropdown-item" href="#">About us</a>
+                <a class="dropdown-item" href="#">Contacts</a>
+            </div>
+        </nav>
+    </header>
+    <main class="main container">
+        <h1 class="main__headline">Yoga Pilates</h1>
+        <hr class="blue-line">
+        <div class="main-article row">
+            <img class="main-article__img img-fluid col-lg-8" src="img/yoga.jpg">
+            <div class="col-lg-4">
+                <h2 class="main-article__headline">
+                    Class description
+                </h2>
+                <p class="main-article__text">
+                    This workout uses a series of exercise routines designed to increase your core strength & improve
+                    your
+                    posture, energy, & flexibility. Pilates work is powered by breath, flow, & centering. By focusing on
+                    the
+                    mind-body connection & using more efficient form, this workout helps develop a stronger, leaner,
+                    healthier body. Appropriate for all fitness levels.
+                </p>
+                <ul class="main-article-list">
+                    <li class="main-article-list__item">
+                        One Personal Trainer
+                    </li>
+                    <li class="main-article-list__item">
+                        Big gym space for training
+                    </li>
+                    <li class="main-article-list__item">
+                        Free tools & props
+                    </li>
+                    <li class="main-article-list__item">
+                        Free locker
+                    </li>
+                    <li class="main-article-list__item">
+                        Free before / after shower
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <aside class="main-aside">
+            <h2 class="main-aside__headline">
+                Related classes
+            </h2>
+            <hr class="blue-line">
+            <div class="row">
+                <div class="main-aside-block col-6 col-md-3">
+                    <img class="main-aside-block__img img-fluid" alt="box" src="img/cardio-kickbox.jpg">
+                    <p class="main-aside-block__text">
+                        Cardio kickboxing
+                    </p>
+                </div>
+                <div class="main-aside-block col-6 col-md-3">
+                    <img class="main-aside-block__img img-fluid" alt="fitness" src="img/fitness.jpg">
+                    <p class="main-aside-block__text">
+                        Fitness xpress
+                    </p>
+                </div>
+                <div class="main-aside-block col-6 col-md-3">
+                    <img class="main-aside-block__img img-fluid" alt="zumba" src="img/zumba.jpg">
+                    <p class="main-aside-block__text">
+                        Zumba
+                    </p>
+                </div>
+                <div class="main-aside-block col-6 col-md-3">
+                    <img class="main-aside-block__img img-fluid" alt="bootcamp" src="img/bootcamp.jpg">
+                    <p class="main-aside-block__text">
+                        Bootcamp
+                    </p>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer class="footer container">
+        <div class="footer-block">
+            &#169; Epam Front-end lab, 2019
+        </div>
+    </footer>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/popper.min.js"></script>
-</head>
-<body>
-    
+    <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>
