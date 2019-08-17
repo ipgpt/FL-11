@@ -1,6 +1,7 @@
 function Hamburger(type, calories) {
     this.type = type;
-    this._calories = calories;
+    this._calories = arguments[2] ? calories + 100 :
+        calories;
     this.isCheese = false;
     this.tomatoes = 0;
     this.isSecretIngredient = arguments[2] || false;
@@ -61,43 +62,46 @@ function Hamburger(type, calories) {
     }
 }
 
-//check task 1
+console.log('check task 1');
 const myHamburger = new Hamburger('classic', 600);
 console.log(myHamburger);
-//check task 2
+console.log('check task 2');
 console.log(myHamburger.getCalories());
 myHamburger.setCalories(700);
 console.log(myHamburger.getCalories());
-//check task 3
+console.log('check task 3');
 myHamburger.addCheese();
 console.log(myHamburger.getCalories());
 myHamburger.addCheese();
-//check task 5
+console.log('check task 5');
 myHamburger.addSecretIngredient();
-//check task 4
+console.log('check task 4');
 myHamburger.addTomato();
 console.log(myHamburger.getCalories());
 myHamburger.addTomato();
 console.log(myHamburger.getCalories());
 myHamburger.addTomato();
-//check task 5
+console.log('check task 5');
 myHamburger.addSecretIngredient();
 console.log(myHamburger.getCalories());
 myHamburger.addSecretIngredient();
-//check task 6
+console.log('check task 6');
 const myHamburger2 = new Hamburger('chicken', 600, true);
 console.log(myHamburger2);
 myHamburger2.addSecretIngredient();
+console.log(myHamburger2.getCalories());
 const myHamburger3 = new Hamburger('fish', 600, false);
 console.log(myHamburger3);
+console.log(myHamburger3.getCalories());
 myHamburger3.addSecretIngredient();
-//check task 7
+console.log(myHamburger3.getCalories());
+console.log('check task 7');
 myHamburger.bite();
 myHamburger.bite();
 myHamburger.addCheese();
 myHamburger.addTomato();
 myHamburger.addSecretIngredient();
-//check task 8
+console.log('check task 8');
 console.log(myHamburger.info());
 myHamburger2.addTomato();
 myHamburger2.bite();
