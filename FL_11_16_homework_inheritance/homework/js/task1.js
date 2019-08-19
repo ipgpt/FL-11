@@ -1,23 +1,20 @@
-const magic = {
-        assign: function (target, ...objects) {
-            for (let i = 0; i < objects.length; i++) {
-                for (const prop in objects[i]) {
-                    if (Object.prototype.hasOwnProperty.call(objects[i], prop)) {
-                        target[prop] = objects[i][prop];
-                    }
+const assign = function (targetObj, ...objects) {
+        for (let i = 0; i < objects.length; i++) {
+            for (const prop in objects[i]) {
+                if (Object.prototype.hasOwnProperty.call(objects[i], prop)) {
+                    targetObj[prop] = objects[i][prop];
                 }
             }
         }
+        return targetObj;
     },
-    a = {
-        name: 'john',
-        surname: 'smith'
+    defaults = {
+        a: 123,
+        b: 777
     },
-    b = {
-        age: 30,
-        isVisa: false
+    options = {
+        a: 456
     },
-    c = {};
+    configs = assign({}, defaults, options);
 
-magic.assign(c, a, b);
-console.log(c);
+console.log(configs);
