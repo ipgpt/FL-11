@@ -10,5 +10,5 @@ const create = function(objProto, props) {
     },
     obj2 = create(obj1);
 
-console.log(Object.getPrototypeOf(obj2) === obj1);
-console.log(obj2.prop);
+console.log(Object.getPrototypeOf(obj2) === obj1); // => true
+console.log(obj2.prop); // => 5

@@ -17,4 +17,4 @@ const assign = function (targetObj, ...objects) {
     },
     configs = assign({}, defaults, options);
 
-console.log(configs);
+console.log(configs); // => {a: 456, b: 777}
