@@ -1,0 +1,96 @@
+html {
+    font-family: monospace;
+    font-size: 12px;
+}
+
+button {
+    width: 60px;
+}
+
+.content-block {
+    overflow: auto;
+}
+
+.start-block {
+    height: 90vh;
+    display: flex;
+}
+
+.start-button {
+    margin: auto;
+}
+
+table {
+    width: 100%;
+}
+
+table,
+th,
+td {
+    border: 1px dashed black;
+    border-collapse: collapse;
+}
+
+th {
+    text-transform: uppercase;
+    background-color: orange;
+}
+
+td {
+    padding: 5px;
+}
+
+.popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    background-color: antiquewhite;
+    border: 9999px solid lightblue;
+}
+
+#nameInput {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.animation-block {
+    display: flex;
+    height: 200px;
+}
+
+.animation {
+    margin: auto;
+    padding: 5px;
+    font-size: 20px;
+    border: 2px dashed black;
+    animation: alive-block 2s infinite linear;
+}
+
+.footer {
+    display: fixed;
+    bottom: 0;
+    text-align: center;
+    background-color: lightblue;
+}
+
+@keyframes alive-block {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.hidden {
+    display: none;
+}
