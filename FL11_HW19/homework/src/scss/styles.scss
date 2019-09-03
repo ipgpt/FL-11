@@ -37,6 +37,11 @@ html {
 
   .results__total__img {
     width: 100%;
+    display: none;
+  }
+
+  .results {
+    display: none;
   }
 
   .buttons {
@@ -65,8 +70,4 @@ html {
       color: $color-seashell;
     }
   }
-}
-
-.hidden {
-  display: none;
 }
