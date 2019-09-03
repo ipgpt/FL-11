@@ -25,7 +25,7 @@
     "webpack-dev-server": "^3.8.0"
   },
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open",
+    "serve": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production"
   }
 }
