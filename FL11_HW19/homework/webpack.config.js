@@ -24,14 +24,6 @@ module.exports = {
       test: /\.js$/,
       loader: 'babel-loader',
       exclude: '/node_modules/'
-    }, {
-      test: /\.html$/,
-      use: [{
-        loader: "html-loader",
-        options: {
-          minimize: true
-        }
-      }]
     }]
   },
   plugins: [
@@ -40,8 +32,10 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       hash: true,
-      minify: true,
-      template: './src/index.html',
+      minify: {
+        collapseWhitespace: true
+    },
+      template: 'src/index.html',
       filename: 'index.html'
     }),
     new CopyPlugin([{
