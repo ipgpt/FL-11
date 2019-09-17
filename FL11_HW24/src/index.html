@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS Tools</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <h1 class="main__headline">Rock, Paper, or Scissors</h1>
+      <div class="rules">
+        <h2 class="rules__headline">Rules</h2>
+        <p class="rules__text">
+          The rules are very simple and probably you remember them from your
+          childhood:
+        </p>
+        <ul class="rules__list">
+          <li class="rules__list__item">
+            If you choose Rock, you will win against Scissors but lose against
+            Paper.
+          </li>
+          <li class="rules__list__item">
+            If you choose Scissors, you will win against Paper but lose against
+            Rock.
+          </li>
+          <li class="rules__list__item">
+            If you choose Paper, you will win against Rock but lose against
+            Scissors.
+          </li>
+        </ul>
+        <p class="rules__text">
+          The game ends after 3 rounds. If you want to play again,<br />just
+          click "Restart" button after a game is finished.
+        </p>
+      </div>
+      <div class="results">
+        <h2 class="results__headline">Choose a weapon</h2>
+        <p class="results__round1"></p>
+        <p class="results__round2"></p>
+        <p class="results__round3"></p>
+        <div class="results__total">
+          <p class="results__total__text"></p>
+          <img
+            class="results__total__img results__total__win"
+            alt="win"
+            src="img/win.jpg"
+          />
+          <img
+            class="results__total__img results__total__lose"
+            alt="lose"
+            src="img/lose.jpg"
+          />
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="buttons__start buttons__button">Start</button>
+        <button class="buttons__rock buttons__button" disabled>Rock</button>
+        <button class="buttons__paper buttons__button" disabled>Paper</button>
+        <button class="buttons__scissors buttons__button" disabled>
+          Scissors
+        </button>
+        <button class="buttons__restart buttons__button" disabled>
+          Restart
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
